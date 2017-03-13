@@ -47,9 +47,9 @@ This object holds the configuration of the wave.
     
 Declare the new wave class and pass the properties to it.
     
-    ```javascript
-    var wave  = new drawWave(properties);
-    ```
+ ```
+ var wave  = new drawWave(properties);
+ ```
     
 Draw the wave on canvas    
     
