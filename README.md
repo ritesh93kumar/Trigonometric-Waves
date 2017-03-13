@@ -4,9 +4,9 @@ Simple javascript plugin to draw basic trigonometric (sine, cos and tan) waves b
 ## How to use
 Copy the Waves.min.js inside your working directory and insert the script tag inside your HTML page.
 
-   ```
-   <script type="txt/javascript" src="Wave.min.js" />
-   ```
+ ```
+ <script type="txt/javascript" src="Wave.min.js" />
+ ```
 
 ## Setting up the waves 
 
@@ -49,18 +49,18 @@ This object holds the configuration of the wave.
     
 Declare the new wave class and pass the properties to it.
     
-   ```
-   var wave  = new drawWave(properties);
-   ```
+ ```
+ var wave  = new drawWave(properties);
+ ```
     
 Draw the wave on canvas    
     
 #### .draw()
 This method draw a single wave on canvas.
 
-   ```
-   wave.draw();
-   ```
+ ```
+ wave.draw();
+ ```
 
 Instead you can also do
     
@@ -80,9 +80,9 @@ For this user must write his own animation method to draw each keyframes of wave
 
 Use array list to store the waves.
     
-    ```
-    var waveList = [];
-    ```
+ ```
+ var waveList = [];
+ ```
 
 Set up the properties of the wave.
 
@@ -90,34 +90,34 @@ This is same as the setting up properties of single wave.
 
 Push the wave to the array list.
 
-    ```
-    waveList.push(new drawWave({
-            canvas:canvas,
-            waveName:"sine",
-            waveProperties:{
-                color: "rgba(255,0,0,0.5)"
-            }    
-        }));
-        
-    waveList.push(new drawWave({ 
-            canvas:canvas,
-            waveName:"cos",
-            waveProperties:{  
-                color: "rgba(0,0,255,0.5)"
-            }    
-        }));
-    ```
+ ```
+ waveList.push(new drawWave({
+         canvas:canvas,
+         waveName:"sine",
+         waveProperties:{
+             color: "rgba(255,0,0,0.5)"
+         }    
+     }));
+
+ waveList.push(new drawWave({ 
+         canvas:canvas,
+         waveName:"cos",
+         waveProperties:{  
+             color: "rgba(0,0,255,0.5)"
+         }    
+     }));
+ ```
     
 Create a method to call **redraw()** method after an interval.
 
-    ```
-    var draw = function(){
-        window.requestAnimationFrame(draw);
-        ctx.clearRect(0, 0, canvas.width, canvas.height);
-        
-        for( var w of waveList)
-            w.redraw();
-        
-    };
-    ```
+ ```
+ var draw = function(){
+     window.requestAnimationFrame(draw);
+     ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+     for( var w of waveList)
+         w.redraw();
+
+ };
+ ```
 
