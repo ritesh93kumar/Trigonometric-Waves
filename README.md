@@ -1,6 +1,9 @@
 # Trigonometric  Waves
 Simple javascript plugin to draw basic trigonometric (sine, cos and tan) waves by setting up basic properties of the waves like frequency, amplitude, phase etc.
 
+### Demo
+Here is the small [Demo] (https://ritesh93kumar.github.io/Trigonometric-Waves/).
+
 ## How to use
 Copy the Waves.min.js inside your working directory and insert the script tag inside your HTML page.
 
