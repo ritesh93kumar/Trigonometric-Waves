@@ -49,7 +49,9 @@ This object holds the configuration of the wave.
     
 Declare the new wave class and pass the properties to it.
     
+      ```
       var wave  = new drawWave(properties);
+      ```
     
 Draw the wave on canvas    
     
@@ -71,7 +73,7 @@ Instead you can also do
             color : "rgba(255,0,0,0.5)"    
         }     
      }).draw();
-    
+     ```
 
 ### Draw multiple waves.
 For this user must write his own animation method to draw each keyframes of waves after an interval and call **redraw** method in it.
@@ -88,7 +90,7 @@ This is same as the setting up properties of single wave.
 
 Push the wave to the array list.
 
-    ```javascript
+    ```
     waveList.push(new drawWave({
             canvas:canvas,
             waveName:"sine",
@@ -108,7 +110,7 @@ Push the wave to the array list.
     
 Create a method to call **redraw()** method after an interval.
 
-    ```javascript
+    ```
     var draw = function(){
         window.requestAnimationFrame(draw);
         ctx.clearRect(0, 0, canvas.width, canvas.height);
