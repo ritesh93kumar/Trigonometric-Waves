@@ -1,0 +1,10 @@
+body{
+    padding-top: 50px;
+    padding-left: 50px;
+    background: black;
+}
+canvas{
+    border-width: medium;
+    border-color: grey;
+    border-style: outset;
+}
