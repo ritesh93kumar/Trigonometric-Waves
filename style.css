@@ -1,7 +1,8 @@
 body{
     padding-top: 50px;
-    padding-left: 50px;
     background: black;
+    margin: auto;
+    width: 70%
 }
 canvas{
     border-width: medium;
