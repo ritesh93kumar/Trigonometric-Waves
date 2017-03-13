@@ -4,7 +4,7 @@ Simple javascript plugin to draw basic trigonometric (sine, cos and tan) waves b
 ## How to use
 Copy the Waves.min.js inside your working directory and insert the script tag inside your HTML page.
    
-    <script type="txt/javascript" src="Wave.min.js" />
+   <script type="txt/javascript" src="Wave.min.js" />
 
 ## Setting up the waves 
 
@@ -47,9 +47,7 @@ This object holds the configuration of the wave.
     
 Declare the new wave class and pass the properties to it.
     
- ```
- var wave  = new drawWave(properties);
- ```
+      var wave  = new drawWave(properties);
     
 Draw the wave on canvas    
     
