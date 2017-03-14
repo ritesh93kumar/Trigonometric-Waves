@@ -15,6 +15,7 @@ var init = function () {
 
     waveList.push(new drawWave({
         canvas: canvas,
+        lineWidth: 2,
         waveName: "cos",
         waveProperties: {
             color: "rgba(0,0,255,0.5)"
@@ -22,6 +23,7 @@ var init = function () {
     }));
     waveList.push(new drawWave({
         canvas: canvas,
+        lineWidth: 2,
         waveName: "tan",
         waveProperties: {
             color: "rgba(0,255,0,0.5)"
@@ -29,6 +31,7 @@ var init = function () {
     }));
     waveList.push(new drawWave({
         canvas: canvas,
+        lineWidth: 2,
         waveName: "sine",
         waveProperties: {
             color: "rgba(255,0,0,0.5)"
