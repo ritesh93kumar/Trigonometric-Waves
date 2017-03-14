@@ -1,11 +1,13 @@
 body{
-    padding-top: 50px;
-    background: black;
-    margin: auto;
-    width: 70%
+    background: black; 
+    text-align: center;
 }
 canvas{
     border-width: medium;
     border-color: grey;
     border-style: outset;
+    background-color: black;
+    width: 100%;
+    height:300px;
 }
+

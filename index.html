@@ -1,27 +1,34 @@
 <!DOCTYPE html>
-<html lang="">
-
+<html>
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Trigonometric waves">
+    <meta name="author" content="Ritesh Kumar">
     <title>Trigonometric waves</title>
-    
-    <link  rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link  rel="stylesheet" href="style.css" />    
 </head>
 
-<body>
-    <h4 style="color:white; ">Sine Wave &darr;</h4>
-    <canvas id="canvas" width="500px" height="300px" style="background:black;"> Canvas is not supported in your browser!!!</canvas>
-        
+<body>   
+    <div class="container col-md-6 col-md-offset-3">
+        <div class="">
+            <h1>Trigonometric Waves</h1>
+            <hr/>
+            <div class="canvasDiv">
+                <h4 style="color:white; ">Sine Wave &darr;</h4>
+                <canvas id="canvas"> Canvas is not supported in your browser!!!</canvas>
+
+                <h4 style="color: white;">Sine (Red), Cos(Blue) and Tan(Green)  &darr; </h4>
+                <canvas id="canvas2"> Canvas is not supported in your browser!!!</canvas>
+                <hr/>
+                <a href="" class="btn btn-lg btn-primary">View code on Github</a>
+            </div>
+        </div>
+    </div>
     
-    <h4 style="color: white;">Sine (Red), Cos(Blue) and Tan(Green)  &darr; </h4>
-    <canvas id="canvas2" width="500px" height="300px" style="background:black;"> Canvas is not supported in your browser!!!</canvas>
-
-
     <script src="Waves.min.js"></script>
     <script src="singleWave.js"></script>
-    <script src="multipleWaves.js"></script>
-
+    <script src="multipleWaves.js"></script>    
 </body>
-
 </html>
